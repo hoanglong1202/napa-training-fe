@@ -15,7 +15,7 @@ const Login = () => {
           <LoginForm />
         </div>
 
-        <div className="child-content">
+        <div className="child-content child-content-copyright">
           <div className="copyright">©2021 Faeast</div>
         </div>
       </Content>

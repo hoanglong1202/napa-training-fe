@@ -67,6 +67,12 @@
   text-align: center;
   letter-spacing: 0.168em;
   text-transform: uppercase;
+
+  margin-top: 105px;
+}
+
+.child-content-copyright {
+  display: flex;
 }
 
 .copyright {
@@ -78,12 +84,13 @@
   /* identical to box height, or 167% */
 
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
 
   /* gray-1 */
 
   color: #2d2d2d;
+  margin-bottom: 15px;
 }
 
 .login-input {
