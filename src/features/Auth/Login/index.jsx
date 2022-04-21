@@ -7,11 +7,17 @@ const Login = () => {
   return (
     <Layout className="container">
       <Content className="content">
-        <div className="logo">freeagent</div>
+        <div className="child-content">
+          <div className="logo">freeagent</div>
+        </div>
 
-        <LoginForm />
+        <div className="child-content">
+          <LoginForm />
+        </div>
 
-        <div className="copyright">©2021 Faeast</div>
+        <div className="child-content">
+          <div className="copyright">©2021 Faeast</div>
+        </div>
       </Content>
     </Layout>
   );
