@@ -1,6 +1,6 @@
 import "@fontsource/lato";
 import "@fontsource/m-plus-1p";
-import "antd/dist/antd.css";
+import "antd/dist/antd.variable.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";

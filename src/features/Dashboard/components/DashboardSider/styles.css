@@ -1,0 +1,104 @@
+.dashboard-sider-logo {
+  height: 36px;
+  margin: 24px 30px 16px 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-sider-container {
+  background-color: #ffffff !important;
+  box-shadow: 0px 6px 16px #d5e3ff;
+  height: 100vh;
+}
+
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child.dashboard-sider-menu-item {
+  background-color: transparent !important;
+}
+li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child.dashboard-sider-menu-item::after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  background-color: transparent !important;
+}
+.ant-menu-item::after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  background-color: transparent !important;
+}
+
+.dashboard-sider-menu-item {
+  padding: 0 !important;
+  margin: 15px 0 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.dashboard-menu-navlink {
+  background-color: #ebf2ff !important;
+  height: 36px !important;
+  width: 36px !important;
+  border-radius: 36px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-menu-navlink-active {
+  background-color: #2979ff !important;
+}
+
+.dashboard-sider {
+  background: #ffffff;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard-sider-logo-container {
+  flex-basis: 10%;
+}
+
+.dashboard-sider-footer-container {
+  flex-basis: 15%;
+}
+
+.dashboard-sider-menu-container {
+  flex-basis: 75%;
+}
+
+.dashboard-sider-divider {
+  margin: 0 16px;
+}
+.dashboard-sider-divider .ant-divider {
+  border: 1px solid #b4b4bb !important;
+}
+.dashboard-sider-divider .ant-divider-horizontal {
+  margin: 0;
+}
+
+.dashboard-sider-footer {
+  margin: 10px 23px 24px 23px;
+
+  text-align: center;
+}
+.dashboard-sider-footer-label {
+  font-family: "M PLUS 1p";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+
+  text-align: center;
+  color: #000000;
+  margin: 0px 0px;
+}
