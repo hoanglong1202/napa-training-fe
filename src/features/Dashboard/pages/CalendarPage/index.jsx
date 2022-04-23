@@ -1,22 +1,24 @@
-import { Layout } from "antd";
-import "../../styles.css";
+import { Layout } from 'antd';
+import DashboardHeader from '../../components/DashboardHeader';
+import { ReactComponent as CalendarPublic } from "../../assets/CalendarPublic.svg";
+import '../../styles.css';
 
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 const CalendarPage = () => {
   return (
     <>
-      <Header className="dashboard-site-layout-header" style={{ margin: 15 }}></Header>
+      <DashboardHeader title="カレンダー" icon={<CalendarPublic />} />
 
       <Content
         className="dashboard-site-layout-background"
         style={{
-          margin: "24px 16px",
+          margin: '24px 16px',
           padding: 24,
           minHeight: 280,
         }}
       >
-        <p>This is Calendar Page</p>{" "}
+        <p>This is Calendar Page</p>{' '}
       </Content>
     </>
   );

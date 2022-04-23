@@ -1,12 +1,14 @@
 import { Layout } from "antd";
+import DashboardHeader from "../../components/DashboardHeader";
+import { ReactComponent as SettingPublic } from "../../assets/SettingPublic.svg";
 import "../../styles.css";
 
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 const SettingPage = () => {
   return (
     <>
-      <Header className="dashboard-site-layout-header" style={{ margin: 15 }}></Header>
+      <DashboardHeader title="Setting" icon={<SettingPublic />} />
 
       <Content
         className="dashboard-site-layout-background"

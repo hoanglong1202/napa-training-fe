@@ -1,14 +1,14 @@
 import { Layout } from 'antd';
 import DashboardHeader from '../../components/DashboardHeader';
-import { ReactComponent as UserPublic } from '../../assets/UserPublic.svg';
+import { ReactComponent as ProfilePublic } from '../../assets/Profile.svg';
 import '../../styles.css';
 
 const { Content } = Layout;
 
-const UserPage = () => {
+const ProfilePage = () => {
   return (
     <>
-      <DashboardHeader title="User" icon={<UserPublic />} />
+      <DashboardHeader title="Profile" icon={<ProfilePublic />} />
 
       <Content
         className="dashboard-site-layout-background"
@@ -18,10 +18,10 @@ const UserPage = () => {
           minHeight: 280,
         }}
       >
-        <p>This is User Page</p>{' '}
+        <p>This is Profile Page</p>{' '}
       </Content>
     </>
   );
 };
 
-export default UserPage;
+export default ProfilePage;

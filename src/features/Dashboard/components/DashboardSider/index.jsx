@@ -99,7 +99,7 @@ const DashboardSider = () => {
         </div>
 
         <div className="dashboard-sider-footer-container">
-          <div className="dashboard-sider-logo">
+          <div className="dashboard-sider-logo" onClick={() => onNavigate('/dashboard/profile')}>
             <Avatar size={36} style={{ backgroundColor: "#fff", border: '1px solid #133774' }} icon={<ProfilePublic />} />
           </div>
           <div className="dashboard-sider-divider">
