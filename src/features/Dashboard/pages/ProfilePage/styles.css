@@ -1,0 +1,13 @@
+.profile-item-container {
+  display: flex;
+  min-width: 27%;
+  margin-bottom: 32px;
+  
+  /* label */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2d2d2d;
+}
+

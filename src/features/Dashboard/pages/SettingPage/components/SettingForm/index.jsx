@@ -1,5 +1,5 @@
 import { Form, Input, Button } from 'antd';
-import './styles.css';
+import '../../styles.css';
 
 const SettingForm = () => {
   const [form] = Form.useForm();
