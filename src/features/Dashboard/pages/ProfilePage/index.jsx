@@ -18,7 +18,15 @@ const ProfilePage = () => {
           minHeight: 280,
         }}
       >
-        <p>This is Profile Page</p>{' '}
+        <div
+          style={{
+            margin: '17px 30px',
+          }}
+        >
+          <span className="content-title">Account Setting</span>
+        </div>
+
+        <p>This is Profile Page</p>
       </Content>
     </>
   );
