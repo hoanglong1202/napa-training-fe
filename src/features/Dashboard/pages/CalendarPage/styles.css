@@ -1,0 +1,55 @@
+.content-calendar .ant-picker-calendar-full .ant-picker-panel .ant-picker-body th {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+
+  text-align: center;
+  color: #1b4ea3;
+}
+
+.calendar-events {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.calendar-events li {
+  font-family: "M PLUS 1p";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  padding: 8px 0;
+  width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+
+  /* opacity: 0.6; */
+  border-bottom: 1px solid #b4b4bb;
+}
+
+.event-success-circle {
+  width: 12px;
+  height: 12px;
+
+  background: #00c48c;
+  border-radius: 16px;
+}
+
+.content-calendar .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+  min-width: 120px;
+  min-height: 140px;
+  border: 1px solid #F6F3F4;
+  margin: 0;
+}
+
