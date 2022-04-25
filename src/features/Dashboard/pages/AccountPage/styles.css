@@ -1,0 +1,16 @@
+.dashboard-table
+  > .ant-spin-nested-loading
+  > .ant-spin-container
+  > .ant-table
+  > .ant-table-container
+  > .ant-table-content
+  > table
+  > .ant-table-thead
+  > tr
+  > th {
+  font-style: normal !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: rgba(0, 0, 0, 0.85);
+}

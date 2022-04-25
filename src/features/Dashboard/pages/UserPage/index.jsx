@@ -1,10 +1,10 @@
+import { PlusOutlined } from "@ant-design/icons";
 import { Button, Input, Layout, Space, Table } from "antd";
-import DashboardHeader from "../../components/DashboardHeader";
+import { useState } from "react";
 import { ReactComponent as UserPublic } from "../../assets/UserPublic.svg";
+import DashboardHeader from "../../components/DashboardHeader";
 import "../../styles.css";
 import "./styles.css";
-import { PlusOutlined } from "@ant-design/icons";
-import { useState } from "react";
 
 const { Content } = Layout;
 
@@ -12,10 +12,12 @@ const columns = [
   {
     title: "Name",
     dataIndex: "name",
+    width: "40%",
   },
   {
     title: "Email",
     dataIndex: "email",
+    width: "40%",
   },
   {
     title: "Action",
@@ -40,17 +42,6 @@ for (let i = 0; i < 46; i++) {
 }
 
 const UserPage = () => {
-  const [selectedRowKeys, setSelectedRowKeys] = useState([]);
-
-  const onSelectChange = (selectedRowKeys) => {
-    setSelectedRowKeys(selectedRowKeys);
-  };
-
-  const rowSelection = {
-    selectedRowKeys,
-    onChange: onSelectChange,
-  };
-
   return (
     <>
       <DashboardHeader title="User" icon={<UserPublic />} />
@@ -75,7 +66,7 @@ const UserPage = () => {
         </div>
 
         <div>
-          <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+          <Table className="dashboard-table" columns={columns} dataSource={data} />
         </div>
       </Content>
     </>
