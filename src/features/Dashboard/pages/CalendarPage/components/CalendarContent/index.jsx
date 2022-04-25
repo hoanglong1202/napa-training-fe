@@ -1,12 +1,7 @@
-import { Calendar, Layout } from "antd";
+import { Calendar } from "antd";
 import moment from "moment";
-// import "../../styles.css";
 import "../../../../styles.css";
 import "../../styles.css";
-
-// moment.locale('en');
-
-const { Content } = Layout;
 
 const CalendarContent = () => {
   const getListData = (value) => {

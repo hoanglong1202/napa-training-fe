@@ -1,5 +1,4 @@
 import { Avatar, Layout } from 'antd';
-import { ReactComponent as ProfilePublic } from '../../assets/Profile.svg';
 import '../../styles.css';
 
 const { Header } = Layout;

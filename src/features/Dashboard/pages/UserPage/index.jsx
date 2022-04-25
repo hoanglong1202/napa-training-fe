@@ -1,32 +1,31 @@
-import { PlusOutlined } from "@ant-design/icons";
-import { Button, Input, Layout, Space, Table } from "antd";
-import { useState } from "react";
-import { ReactComponent as UserPublic } from "../../assets/UserPublic.svg";
-import DashboardHeader from "../../components/DashboardHeader";
-import "../../styles.css";
-import "./styles.css";
+import { PlusOutlined } from '@ant-design/icons';
+import { Button, Input, Layout, Space, Table } from 'antd';
+import { ReactComponent as UserPublic } from '../../assets/UserPublic.svg';
+import DashboardHeader from '../../components/DashboardHeader';
+import '../../styles.css';
+import './styles.css';
 
 const { Content } = Layout;
 
 const columns = [
   {
-    title: "Name",
-    dataIndex: "name",
-    width: "40%",
+    title: 'Name',
+    dataIndex: 'name',
+    width: '40%',
   },
   {
-    title: "Email",
-    dataIndex: "email",
-    width: "40%",
+    title: 'Email',
+    dataIndex: 'email',
+    width: '40%',
   },
   {
-    title: "Action",
-    key: "action",
+    title: 'Action',
+    key: 'action',
     render: () => (
       <Space size="middle">
-        <a>Reset Password</a>
-        <a>Edit</a>
-        <a>Delete</a>
+        <a href="/">Reset Password</a>
+        <a href="/">Edit</a>
+        <a href="/">Delete</a>
       </Space>
     ),
   },
@@ -49,7 +48,7 @@ const UserPage = () => {
       <Content
         className="dashboard-site-layout-background"
         style={{
-          margin: "24px 16px",
+          margin: '24px 16px',
           padding: 24,
           minHeight: 280,
         }}
@@ -58,15 +57,28 @@ const UserPage = () => {
           <div className="dashboard-table-content-label">User list</div>
 
           <div className="dashboard-table-content-button-header">
-            <Input.Search allowClear style={{ width: 264 }} placeholder="Input search text" />
-            <Button type="primary" icon={<PlusOutlined />} htmlType="button" style={{ marginLeft: 16 }}>
+            <Input.Search
+              allowClear
+              style={{ width: 264 }}
+              placeholder="Input search text"
+            />
+            <Button
+              type="primary"
+              icon={<PlusOutlined />}
+              htmlType="button"
+              style={{ marginLeft: 16 }}
+            >
               Add New
             </Button>
           </div>
         </div>
 
         <div>
-          <Table className="dashboard-table" columns={columns} dataSource={data} />
+          <Table
+            className="dashboard-table"
+            columns={columns}
+            dataSource={data}
+          />
         </div>
       </Content>
     </>
