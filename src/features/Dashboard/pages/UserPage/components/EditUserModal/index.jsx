@@ -1,0 +1,30 @@
+import { Form, Input, Modal } from "antd";
+import React from "react";
+
+const EditUserModal = ({ handleOk, handleCancel, isModalVisible }) => {
+  return (
+    <>
+      <Modal title="Edit User" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <Form
+          name="basic"
+          labelCol={{ span: 4 }}
+          wrapperCol={{ span: 20 }}
+          initialValues={{ remember: true }}
+          // onFinish={onFinish}
+          // onFinishFailed={onFinishFailed}
+          autoComplete="off"
+        >
+          <Form.Item label="Mail" name="mail" rules={[{ required: true, message: "Please input your mail!" }]}>
+            <Input maxLength={50} />
+          </Form.Item>
+
+          <Form.Item label="Name" name="username" rules={[{ required: true, message: "Please input your username!" }]}>
+            <Input />
+          </Form.Item>
+        </Form>
+      </Modal>
+    </>
+  );
+};
+
+export default EditUserModal;
